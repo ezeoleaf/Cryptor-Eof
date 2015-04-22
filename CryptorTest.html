@@ -3,16 +3,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Cryptor Test</title>
-	<script src="scripts/cryptorLibrary.min.js" type="text/javascript"></script>
+	<script src="scripts/cryptor.js" type="text/javascript"></script>
 	<script src="scripts/jquery-1.11.2.min.js" type="text/javascript"></script>
 	<script>
 
 	function encryptValues(textToEncrypt)
 	{
-		$('#encryptResultEof').html(encryptText(textToEncrypt,'eof'));
-		$('#encryptResultVne').html(encryptText(textToEncrypt,'vne'));
-		$('#encryptResultNum').html(encryptText(textToEncrypt,'num'));
-		$('#encryptResultSxf').html(encryptText(textToEncrypt,'sxf'));
+		$('#encryptResultEof').html(encrypt(textToEncrypt,'eof'));
+		$('#encryptResultVne').html(encrypt(textToEncrypt,'vne'));
+		$('#encryptResultNum').html(encrypt(textToEncrypt,'num'));
+		$('#encryptResultSxf').html(encrypt(textToEncrypt,'sxf'));
 	}
 
 	</script>
@@ -23,28 +23,28 @@
 <span><b>Ezeoleaf</b></span><br>
 <hr>
 <span id="encryptResultEof"></span></br>
-<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultEof').html(disencryptText(this.value));" id="toDisencrypt" /></br>
+<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultEof').html(disencrypt(this.value));" id="toDisencrypt" /></br>
 <span id="disencryptResultEof"></span>
 <br>
 <br>
 <span><b>Vigenere</b></span><br>
 <hr>
 <span id="encryptResultVne"></span></br>
-<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultVne').html(disencryptText(this.value));" id="toDisencrypt" /></br>
+<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultVne').html(disencrypt(this.value));" id="toDisencrypt" /></br>
 <span id="disencryptResultVne"></span>
 <br>
 <br>
 <span><b>Numeric</b></span><br>
 <hr>
 <span id="encryptResultNum"></span></br>
-<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultNum').html(disencryptText(this.value));" id="toDisencrypt" /></br>
+<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultNum').html(disencrypt(this.value));" id="toDisencrypt" /></br>
 <span id="disencryptResultNum"></span>
 <br>
 <br>
 <span><b>SixtyFour</b></span><br>
 <hr>
 <span id="encryptResultSxf"></span></br>
-<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultSxf').html(disencryptText(this.value));" id="toDisencrypt" /></br>
+<span>Desencriptar: &nbsp;&nbsp;</span><input type="text" name="disencrypt" onchange="$('#disencryptResultSxf').html(disencrypt(this.value));" id="toDisencrypt" /></br>
 <span id="disencryptResultSxf"></span>
 </body>
 </html>

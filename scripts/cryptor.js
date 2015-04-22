@@ -102,7 +102,7 @@ dictionary = {
 	164:"sxf"
 }
 
-function encryptText(textToEncrypt,method)
+function encrypt(textToEncrypt,method)
 {
 	var encryptedText;
 	method || ( method = 'eof' );
@@ -124,7 +124,7 @@ function encryptText(textToEncrypt,method)
 	return encryptedText;
 }
 
-function disencryptText(textToDisencrypt)
+function disencrypt(textToDisencrypt)
 {
 	var indexMethod,configMethod, config, method, text, disencryptedText;
 	indexConfig = textToDisencrypt.indexOf('¿¡');
