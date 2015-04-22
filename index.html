@@ -8,15 +8,15 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
-    <title>Cryptor by ezeoleaf</title>
+    <title>Cryptor.js by ezeoleaf</title>
   </head>
 
   <body>
 
     <header>
       <div class="container">
-        <h1>Cryptor</h1>
-        <h2>Cryptor encrypts and disencrypt text with homemade encryption methods</h2>
+        <h1>Cryptor.js</h1>
+        <h2>Cryptor is a javascript library that encrypts and disencrypt text with homemade encryption methods</h2>
 
         <section id="downloads">
           <a href="https://github.com/ezeoleaf/Cryptor-Eof/zipball/master" class="btn">Download as .zip</a>
@@ -28,30 +28,55 @@
 
     <div class="container">
       <section id="main_content">
-        <h3>
-<a id="welcome-to-cryptor-home-page" class="anchor" href="#welcome-to-cryptor-home-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Cryptor Home Page.</h3>
+        <h2>
+<a id="welcome-to-cryptor-home-page" class="anchor" href="#welcome-to-cryptor-home-page" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Cryptor Home Page.</h2>
 
-<p>Encrypt and disencrypt text easily:</p>
+<h3>
+<a id="encrypt-text-easily" class="anchor" href="#encrypt-text-easily" aria-hidden="true"><span class="octicon octicon-link"></span></a>Encrypt text easily:</h3>
 
 <pre><code>return encrypt(text,method)
 </code></pre>
 
 <p>Examples:</p>
 
-<pre><code>return encryptText('hello','eof');
+<pre><code>return encrypt('hello','eof');
 Result: 2HaUs,rSYrSYbÑ$¿¡53-0-89-0-33-0¿¡97
 
-return encryptText('hello','eof');
+return encrypt('hello','eof');
 Result: nSoK(6DKLDKLzf.¿¡26-1-87-0-27-0¿¡97
 
-return encryptText('hello','sxf');
+return encrypt('hello','sxf');
 Result: Q:KHOñys%c}S%c}S-l/ÑB7g$e%$x_u-EÑ3:-9k]K5KTir[h'2`p@7OJ}7OJ}V8Oc¿¡42-0-29-1-85-0-5¿¡164
 
-return encryptText('hello','vne');
+return encrypt('hello','vne');
 Result: 9G~02¿¡98
 
-return encryptText('hello','vne');
+return encrypt('hello','vne');
 Result: 242590414213222388222388515223¿¡63-1-62-1-91-1¿¡99
+</code></pre>
+
+<h3>
+<a id="also-disencrypt-text-easily" class="anchor" href="#also-disencrypt-text-easily" aria-hidden="true"><span class="octicon octicon-link"></span></a>Also disencrypt text easily:</h3>
+
+<pre><code>return disencrypt(text)
+</code></pre>
+
+<p>Examples:</p>
+
+<pre><code>return disencrypt('2HaUs,rSYrSYbÑ$¿¡53-0-89-0-33-0¿¡97');
+Result: hello
+
+return disencrypt('nSoK(6DKLDKLzf.¿¡26-1-87-0-27-0¿¡97');
+Result: hello
+
+return disencrypt('Q:KHOñys%c}S%c}S-l/ÑB7g$e%$x_u-EÑ3:-9k]K5KTir[h'2`p@7OJ}7OJ}V8Oc¿¡42-0-29-1-85-0-5¿¡164');
+Result: hello
+
+return disencrypt('9G~02¿¡98');
+Result: hello
+
+return disencrypt('242590414213222388222388515223¿¡63-1-62-1-91-1¿¡99');
+Result: hello
 </code></pre>
 
 <h3>
